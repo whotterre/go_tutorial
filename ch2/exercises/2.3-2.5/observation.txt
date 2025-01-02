@@ -1,0 +1,16 @@
+
+goos: linux
+goarch: amd64
+pkg: 2.3-2.5
+cpu: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+BenchmarkPopCount-4        	1000000000	         0.3461 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoopCount-4       	154266483	         7.118 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPopCountShift-4   	31346353	        37.15 ns/op	       0 B/op	       0 allocs/op
+
+Observations:
+The table-lookup version (Exercise 2.3) performs the best due to its precomputed nature.
+
+The loop version (Exercise 2.3) is slower but simpler and avoids memory overhead from a table.
+
+The shift version (Exercise 2.4) is the least performant, but it demonstrates a clear and consistent logic.
+

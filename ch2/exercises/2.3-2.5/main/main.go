@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"2.3/popcount"
+	"2.3-2.5/popcount"
 )
 
 func main() {
@@ -14,7 +14,11 @@ func main() {
 	popcount.PopCount(43)
 	end := time.Since(start)
 
-	fmt.Printf("Bitwise popcount finished in %v", end)
-	
+	begin := time.Now()
+	popcount.LoopCount(43)
+	term := time.Since(begin)
+
+	fmt.Printf("Bitwise popcount finished in %v\n", end)
+	fmt.Printf("Loopwise popcount finished in %v\n", term)
 
 }
