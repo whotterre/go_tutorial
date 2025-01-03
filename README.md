@@ -6,3 +6,7 @@ Contains 13 chapters of which I would make an entry here once I conclude a chapt
 ## Chapter 1 : Tutorial 
 - Samples of Go programs and a code syntax primer.
 - 
+## Chapter 2: Program Structure
+- A deeper dive into the structure of Go programs - variables, type declarations, assignments, scope
+
+## Chapter 3: Basic Data Types
