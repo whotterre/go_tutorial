@@ -10,3 +10,5 @@ Contains 13 chapters of which I would make an entry here once I conclude a chapt
 - A deeper dive into the structure of Go programs - variables, type declarations, assignments, scope
 
 ## Chapter 3: Basic Data Types
+- Taked about the basic types 
+(integers(int8 - int32), float(float32) - float64), complex numbers, struct and strings
