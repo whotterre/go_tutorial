@@ -1,0 +1,42 @@
+package main
+
+import "fmt"
+
+func main() {
+	// Array literal
+	arr := [13]string{
+		1:  "Jan",
+		2:  "Feb",
+		3:  "March",
+		4:  "Apr",
+		5:  "May",
+		6:  "June",
+		7:  "July",
+		8:  "Aug",
+		9:  "Sept",
+		10: "Oct",
+		11: "Nov",
+		12: "Dec",
+	}
+
+	summer := arr[2:4]
+
+	fmt.Printf("Length of arr: %d\n", len(arr))
+	fmt.Printf("Length of summer: %d\n", len(summer))
+	fmt.Printf("Capacity of summer: %d\n", cap(summer))
+
+	// for _, i := range arr {
+	// 	fmt.Printf("%s\n", i)
+	// }
+	for i, j := range arr {
+		fmt.Println(i, j)
+	}
+}
+// Reverses the array of strings
+func reverse(s []string) {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
+}
+
+
