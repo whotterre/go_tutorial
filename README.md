@@ -17,4 +17,4 @@ Contains 13 chapters of which I would make an entry here once I conclude a chapt
 Arrays, Slices, Maps, Structs and JSON
 
 ## Chapter 5: Functions
-Function structure, recursion, variadic functions 
+Function structure, recursion, variadic functions, defer, panic and recover keywords.
