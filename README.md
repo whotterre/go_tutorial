@@ -18,3 +18,6 @@ Arrays, Slices, Maps, Structs and JSON
 
 ## Chapter 5: Functions
 Function structure, recursion, variadic functions, defer, panic and recover keywords.
+
+## Chapter 6: Methods
+Struct method structure, recievers as pointers, and encapsulation
