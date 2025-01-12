@@ -21,3 +21,5 @@ Function structure, recursion, variadic functions, defer, panic and recover keyw
 
 ## Chapter 6: Methods
 Struct method structure, recievers as pointers, and encapsulation
+
+## Chapter 7: Interfaces
