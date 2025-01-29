@@ -1,0 +1,39 @@
+package main
+func findDifference(nums1 []int, nums2 []int) [][]int {
+    res := [][]int
+
+    a := getDiff(nums1, nums2)
+    b := getDiff(nums2, nums1)
+
+    res[0] = a
+    res[1] = b
+    return res
+}
+
+func getDiff(numsOne []int, numsTwo []int) []int {
+    result = []int
+    hashSetOne := map[int]bool
+    hashSetTwo := map[int]bool
+
+    // Put everything in second but not in first
+    for _, item := range numsTwo {
+        hashSetTwo[item] = item
+    }
+
+    // Put everything in first but not in second in here
+    for _, num := range numOne {
+        if !hashSetTwo[num] {
+            hashSetOne[num] = num
+        }
+    }
+
+    for key, val := hashSetOne {
+        if !val {
+            append(result, key)
+        }
+    }
+
+    return result
+
+
+}
